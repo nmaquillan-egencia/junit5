@@ -33,7 +33,10 @@ on GitHub.
   for this information.
 * Class loading errors that occur during classpath scanning are now logged at `DEBUG`
   level (i.e., the `FINE` log level in `java.util.logging`) instead of as warnings.
-
+* New discovery selector `ModuleSelector` for scanning Java 9 modules for test classes.
+* New console launcher option `--select-module <name>` or `-o <name>`.
+* New console launcher option `--scan-module-path` for selecting all resolved modules
+  available on the boot layer configuration.
 
 [[release-notes-5.1.0-junit-jupiter]]
 ==== JUnit Jupiter
@@ -53,6 +56,7 @@ on GitHub.
   - For example, the generated failure message for a call to `assertTrue(false)` is now
     "expected: <true> but was: <false>" instead of an empty string.
 * Unused arguments are now omitted from display names of parameterized tests.
+* Support new JUnit Platform `ModuleSelector`.
 
 
 [[release-notes-5.1.0-junit-vintage]]
@@ -68,4 +72,4 @@ on GitHub.
 
 ===== New Features and Improvements
 
-* ❓
+* Support new JUnit Platform `ModuleSelector`.
